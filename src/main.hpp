@@ -3,13 +3,12 @@
 void help();
 void init();
 
-#define cmdlen 3
+#define cmdlen 4
 
 struct funs
 {
 	string str;
-	void (* fun)(char * arg);
+	void (*fun)(char **arg);
 };
 
 struct funs cmdf[cmdlen];
-

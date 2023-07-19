@@ -12,6 +12,7 @@ add_executable(cglc src/main.cpp)
 
 add_executable(mtest1 test/mtest1.cpp)
 add_executable(mtest2 test/mtest2.cpp)
+
 target_include_directories(mtest1 PUBLIC "src")
 target_include_directories(mtest2 PUBLIC "src")
 
@@ -19,6 +20,10 @@ target_link_libraries(cglc PUBLIC my)
 target_link_libraries(mtest1 PUBLIC my)
 target_link_libraries(mtest2 PUBLIC my)
 
+add_test("-f" cglc.exe -f sample3.txt)
+add_test("-rf" cglc.exe -rf sample3.txt)
+add_test("-fl" cglc.exe -rf sample3.txt)
+add_test("-c" cglc.exe -c sample3.txt sample3.txt.mhs)
 add_test(mtest2 mtest2.exe)
 add_test(mtest1 mtest1.exe)
 
