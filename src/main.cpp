@@ -11,10 +11,10 @@ void help()
 {
 	cout << endl
 		 << endl
-		 << "-rf [file_path]				read from file" << endl
-		 << "-f	[file_path]					hash file" << endl
-		 << "-fl [file_path]				hash file line by line" << endl
-		 << "-c [file_path] [mhs_file_path]	check file with its '.mhs' file" << endl;
+		 << "-rf [file_path]\t\t\t\tread from file" << endl
+		 << "-f [file_path]\t\t\t\thash file" << endl
+		 << "-fl [file_path]\t\t\t\thash file line by line" << endl
+		 << "-c [file_path] [mhs_file_path]\t\tcheck file with its '.mhs' file" << endl;
 }
 
 void rf(char **arg)
